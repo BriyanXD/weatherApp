@@ -1,0 +1,47 @@
+@import url(../../index.css);
+
+.homeContainer{
+    background: #403B4A;  /* fallback for old browsers */
+    height: 100vh;
+    overflow: hidden;
+}
+.searchContainer{
+    min-height: 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.search{
+    width: 30%;
+    min-height: 30px;
+    height: 5vh;
+    border: 0;
+    outline: 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+}
+.button{
+    width: 50px;
+    min-height: 30px;
+    height: 5vh;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loading{
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+@media screen and (max-width:1000px) {
+    .homeContainer{
+        overflow: auto;
+    }
+    .search{
+        width: 60%;
+    }
+}
